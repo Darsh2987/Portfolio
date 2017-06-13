@@ -233,5 +233,115 @@ li {
 /* END OF RULES FOR LANDSCAPE SMALL SCREEN - NAVIGATION OVERLAY */
 /* ============================================================ */
 /* END OF RULES FOR THE FULL SCREEN NAVIGATION OVERLAY */
+/* RULES FOR HOME PAGE - TITLES AND LINK ICONS */
+.home-bg {
+  background-color: #EAE5C7; }
+
+.home__main {
+  margin: 10% 0; }
+  .home__main h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+    color: #3b3747;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2); }
+  .home__main h2 {
+    font-size: 4rem;
+    color: #453f52;
+    margin-bottom: 10px; }
+  .home__main h3 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #6a617f; }
+  .home__main--slideDown {
+    animation-name: slideDown;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
+@keyframes slideDown {
+  from {
+    margin: 0; }
+  to {
+    margin: 10% 0px; } }
+.three__icons img {
+  width: 100px;
+  opacity: 0.6;
+  transition: all .2s ease-in-out; }
+.three__icons img:hover {
+  transform: scale(1.5);
+  opacity: 1;
+  transition: all 0.2s ease-in-out; }
+
+.project__icon, .about__icon {
+  margin-right: 150px; }
+
+/* ================================== */
+/* RULES FOR SMALL SCREEN - HOME PAGE */
+/* RULES FOR SMALL SCREEN - HOME PAGE */
+@media only screen and (max-width: 380px) {
+  .home__main {
+    margin: 17% 0; }
+  @keyframes slideDown {
+    from {
+      margin: 0; }
+    to {
+      margin: 17% 0; } }
+    .home__main h1 {
+      font-size: 3.2rem; }
+    .home__main h2 {
+      font-size: 2rem; }
+    .home__main h3 {
+      font-size: 1.2rem; }
+
+  .three__icons {
+    margin-top: -20px; }
+    .three__icons img {
+      width: 80px; }
+
+  .project__icon, .about__icon {
+    margin-right: 20px; } }
+/* END OF RULES FOR SMALL SCREEN - HOME PAGE */
+/* END OF RULES FOR SMALL SCREEN - HOME PAGE */
+/* ========================================= */
+/* ============================================ */
+/* RULES FOR LANDSCAPE SMALL SCREEN - HOME PAGE */
+/* RULES FOR LANDSCAPE SMALL SCREEN - HOME PAGE */
+@media only screen and (min-width: 381px) and (max-width: 670px) {
+  .home__main {
+    margin: 5% 0px; }
+  @keyframes slideDown {
+    from {
+      margin: 0; }
+    to {
+      margin: 5% 0; } }
+    .home__main h1 {
+      font-size: 3rem;
+      margin: 0 auto 0.5rem auto; }
+    .home__main h2 {
+      font-size: 2.3rem;
+      margin-bottom: .5rem; }
+    .home__main h3 {
+      font-size: 1.5rem; }
+
+  .three__icons img {
+    width: 80px;
+    margin-top: -20px; }
+
+  .project__icon, .about__icon {
+    margin-right: 60px; } }
+/* END OF RULES FOR LANDSCAPE SMALL SCREEN - HOME PAGE */
+/* END OF RULES FOR LANDSCAPE SMALL SCREEN - HOME PAGE */
+/* =================================================== */
+/* ====================================*/
+/* RULES FOR MEDIUM SCREEN - HOME PAGE */
+/* RULES FOR MEDIUM SCREEN - HOME PAGE */
+@media only screen and (min-width: 671px) and (max-width: 1094px) {
+  .home__main h2 {
+    font-size: 2.7rem; }
+  .home__main h3 {
+    font-size: 2.2rem; } }
+/* END OF RULES FOR MEDIUM SCREEN - HOME PAGE */
+/* END OF RULES FOR MEDIUM SCREEN - HOME PAGE */
+/* ===========================================*/
+/* END OF RULES FOR HOME PAGE - TITLES AND LINK ICONS */
 
 /*# sourceMappingURL=styles.css.map */
