@@ -1,0 +1,39 @@
+/* VARIABLES */
+/* GLOBAL RULES */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Trebuchet MS; }
+
+* li {
+  list-style: none; }
+
+* a {
+  text-decoration: none;
+  color: #EAE5C7; }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+html, body {
+  height: 100%;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.wrapper {
+  padding-bottom: 100px;
+  position: relative;
+  min-height: 100%; }
+
+/* END OF GLOBAL RULES */
+
+/*# sourceMappingURL=styles.css.map */
