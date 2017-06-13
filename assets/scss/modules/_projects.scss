@@ -1,0 +1,307 @@
+/* RULES FOR PROJECTS PAGE */
+
+.portfolio-bg {
+  background-color: #7A5B7B;
+}
+
+.page__headline {
+  width: 90%;
+	font-size: 3.5rem;
+	margin: 30px auto 30px auto;
+	padding-bottom: 30px;
+	color: $creame;
+	border-bottom: 1px solid $creame;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .project {
+  	position: relative;
+  	width: 27%;
+  	margin: 2% 2% 10% 2%;
+
+    h2 {
+      font-size: 1.9rem;
+      margin-top: 10px;
+      color: $creame;
+      font-weight: bold;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: #fff;
+      font-weight: 300;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    }
+  }
+}
+
+.project-description h3, .project-description h4 {
+	display: none;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(51, 46, 60, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .overlay-text {
+    width: 95%;
+    color: $creame;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+
+    h3 {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, .9);
+    }
+  }
+}
+
+.project:hover .overlay {
+  height: 100%;
+}
+
+#dc {
+  width: 50%;
+}
+
+#list-icon {
+	width: 50%;
+}
+
+#bowling {
+	width: 62.5%;
+}
+
+#reaction-test {
+	font-size: 10.8vw;
+}
+
+#word-game {
+	font-size: 10.8vw;
+}
+
+
+
+/* ====================================== */
+/* RULES FOR SMALL SCREEN - PROJECTS PAGE */
+/* RULES FOR SMALL SCREEN - PROJECTS PAGE */
+
+@media only screen and (max-width: 380px) {
+
+  .page__headline {
+    font-size: 2.2rem;
+  }
+
+  .flexbox-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+    .project {
+      width: 80%;
+      margin-right: auto;
+      margin-bottom: 15%;
+      margin-left: auto;
+      padding: 10px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+
+  .project-description h3, .project-description h4 {
+    display: block;
+  }
+
+  #reaction-test {
+    font-size: 24vw;
+  }
+
+  #word-game {
+    font-size: 24vw;
+  }
+
+}
+
+/* END OF RULES FOR SMALL SCREEN - PROJECTS PAGE */
+/* END OF RULES FOR SMALL SCREEN - PROJECTS PAGE */
+/* ============================================= */
+
+
+
+
+/* ================================================ */
+/* RULES FOR LANDSCAPE SMALL SCREEN - PROJECTS PAGE */
+/* RULES FOR LANDSCAPE SMALL SCREEN - PROJECTS PAGE */
+
+@media only screen and (min-width: 381px) and (max-width: 670px) {
+
+  .page__headline {
+    font-size: 2.2rem;
+  }
+
+  .flexbox-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+    .project {
+      width: 60%;
+      margin-right: auto;
+      margin-bottom: 15%;
+      margin-left: auto;
+      padding: 10px;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+
+  .project-description h3, .project-description h4 {
+    display: block;
+  }
+
+  #reaction-test {
+    font-size: 24vw;
+  }
+
+  #word-game {
+    font-size: 24vw;
+  }
+}
+
+/* END OF RULES FOR LANDSCAPE SMALL SCREEN - PROJECTS PAGE */
+/* END OF RULES FOR LANDSCAPE SMALL SCREEN - PROJECTS PAGE */
+/* ======================================================= */
+
+/* ======================= */
+/* RULES FOR MEDIUM SCREEN */
+/* RULES FOR MEDIUM SCREEN */
+
+@media only screen and (min-width: 671px) and (max-width: 800px) {
+
+  .page__headline {
+    font-size: 3rem;
+  }
+
+  .flexbox-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+    .project {
+      width: 60%;
+      margin-right: auto;
+      margin-bottom: 15%;
+      margin-left: auto;
+      padding: 10px;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+
+  .project-description h3, .project-description h4 {
+    display: block;
+  }
+
+  #reaction-test {
+    font-size: 24vw;
+  }
+
+  #word-game {
+    font-size: 24vw;
+  }
+}
+
+/* END OF RULES FOR MEDIUM SCREEN */
+/* END OF RULES FOR MEDIUM SCREEN */
+/* ============================== */
+
+
+
+
+/* ======================== */
+/* RULES FOR LARGER SCREENS */
+/* RULES FOR LARGER SCREENS */
+
+@media only screen and (min-width: 801px) and (max-width: 1030px) {
+
+  .flexbox-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+    .project {
+      width: 60%;
+      margin-right: auto;
+      margin-bottom: 15%;
+      margin-left: auto;
+      padding: 10px;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+
+  .project-description h3, .project-description h4 {
+    display: block;
+  }
+
+  #reaction-test {
+    font-size: 24vw;
+  }
+
+  #word-game {
+    font-size: 24vw;
+  }
+}
+
+
+/* END OF RULES FOR LARGER SCREENS */
+/* END OF RULES FOR LARGER SCREENS */
+/* =============================== */
+
+
+/* END OF RULES FOR PROJECTS PAGE */
