@@ -1,0 +1,146 @@
+/* RULES FOR THE FULL SCREEN NAVIGATION OVERLAY */
+
+.nav--hideMe {
+  display: none;
+}
+
+.nav__overlay-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+
+  &-inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    ul {
+      padding-left: 0;
+      padding-right: 0;
+      list-style-type: none;
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+
+
+li {
+  color: #ebe5c8;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  height:33.33vh;
+  line-height: 33.33vh;
+  font-weight: 900;
+
+  a:hover {
+    border-bottom: 3px solid $creame;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.nav-projects {
+	background-color: #80617F;
+}
+
+.nav-about {
+	background-color: #609F8E;
+}
+
+.nav-contact {
+	background-color: #A7403A;
+}
+
+.nav-close {
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.animateIn {
+	animation-name: fadeIn;
+	animation-timing-function: ease-in-out;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.animateOut {
+	animation-name: fadeOut;
+	animation-timing-function: ease-in-out;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+
+
+/* =========================================== */
+/* RULES FOR SMALL SCREEN - NAVIGATION OVERLAY */
+/* RULES FOR SMALL SCREEN - NAVIGATION OVERLAY */
+
+@media only screen and (max-width: 380px) {
+
+  nav ul li {
+    font-size: 3rem;
+  }
+}
+
+
+/* END OF RULES FOR SMALL SCREEN - NAVIGATION OVERLAY */
+/* END OF RULES FOR SMALL SCREEN - NAVIGATION OVERLAY */
+/* ================================================== */
+
+
+
+
+/* ===================================================== */
+/* RULES FOR LANDSCAPE SMALL SCREEN - NAVIGATION OVERLAY */
+/* RULES FOR LANDSCAPE SMALL SCREEN - NAVIGATION OVERLAY */
+
+@media only screen and (min-width: 381px) and (max-width: 670px) {
+
+  nav ul li {
+     font-size: 3rem;
+  }
+}
+
+/* END OF RULES FOR LANDSCAPE SMALL SCREEN - NAVIGATION OVERLAY */
+/* END OF RULES FOR LANDSCAPE SMALL SCREEN - NAVIGATION OVERLAY */
+/* ============================================================ */
+
+
+/* END OF RULES FOR THE FULL SCREEN NAVIGATION OVERLAY */
