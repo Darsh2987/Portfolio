@@ -554,5 +554,73 @@ li {
 /* END OF RULES FOR LARGER SCREENS */
 /* =============================== */
 /* END OF RULES FOR PROJECTS PAGE */
+/* RULES FOR ABOUT ME PAGE */
+/* RULES FOR ABOUT ME PAGE */
+.about-bg {
+  background-color: #5D9D8D; }
+
+.aboutme {
+  width: 80%;
+  margin: 0 auto 150px auto; }
+  .aboutme div {
+    padding: 20px;
+    margin-bottom: 5px;
+    opacity: 0; }
+    .aboutme div p {
+      font-size: 1.8rem;
+      color: #EAE5C7;
+      text-align: left;
+      line-height: 2.5rem; }
+  .aboutme .pone p {
+    color: #000; }
+
+.pone, .pthree {
+  position: relative;
+  animation-name: slideinleft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s; }
+
+.ptwo, .pfour {
+  position: relative;
+  animation-name: slideinright;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s; }
+
+@keyframes slideinleft {
+  from {
+    opacity: 0;
+    left: -600px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+@keyframes slideinright {
+  from {
+    opacity: 0;
+    left: 600px; }
+  to {
+    opacity: 1;
+    left: 0px; } }
+/* ====================================== */
+/* RULES FOR SMALL SCREEN - ABOUT ME PAGE */
+/* RULES FOR SMALL SCREEN - ABOUT ME PAGE */
+@media only screen and (max-width: 670px) {
+  .aboutme {
+    width: 90%; }
+    .aboutme div {
+      padding: 10px; }
+      .aboutme div p {
+        font-size: 1.2rem;
+        line-height: 2rem; } }
+/* END OF RULES FOR SMALL SCREEN - ABOUT ME PAGE */
+/* END OF RULES FOR SMALL SCREEN - ABOUT ME PAGE */
+/* ============================================= */
+/* END OF RULES FOR ABOUT ME PAGE */
+/* END OF RULES FOR ABOUT ME PAGE */
 
 /*# sourceMappingURL=styles.css.map */
