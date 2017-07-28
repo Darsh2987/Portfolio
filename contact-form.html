@@ -44,28 +44,28 @@
 			<!-- End of Page Headline -->
 
 			<section class="contact">
-				<article class="info">
+				<article>
 					<p class="contact-message">If you wish to contact me about a project or any of the services that I provide then feel free to send me your name, email address and a short description of your enquiry.</p>
 					<p class="contact-message2">Lets build something great together!</p>
 					<p class="email-address">Alternatively you can email me at <a href="mailto:Darsh2987@gmail.com">Darsh2987@gmail.com</a></p>
 				</article>
-			</section>
 
-			<form method="POST" name="contactform" action="contact-form-handler.php">
-				<p>
-					<label for='name'>Your Name:</label> <br>
-					<input type="text" name="name">
-				</p>
-				<p>
-					<label for='email'>Email Address:</label> <br>
-					<input type="text" name="email"> <br>
-				</p>
-				<p>
-					<label for='message'>Message:</label> <br>
-					<textarea name="message"></textarea>
-				</p>
-				<input type="submit" value="Submit"><br>
-			</form>
+				<form method="POST" name="contactform" action="contact-form-handler.php">
+					<p>
+						<label for='name'>Your Name:</label> <br>
+						<input class="input" type="text" name="name" placeholder="Name">
+					</p>
+					<p>
+						<label for='email'>Email Address:</label> <br>
+						<input class="input" type="text" name="email" placeholder="Email">
+					</p>
+					<p>
+						<label for='message'>Message:</label> <br>
+						<textarea class="input" name="message" placeholder="Message"></textarea>
+					</p>
+					<input class="submit" type="submit" value="Send"><br>
+				</form>
+			</section>
 
 			<!-- Footer -->
 			<footer class="footer">
