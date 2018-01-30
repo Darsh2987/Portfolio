@@ -41,6 +41,10 @@ html, body {
   height: 105px;
   background-color: #332E3C;
   border-bottom: 2px solid #C7C095; }
+  .header__github img {
+    float: left;
+    width: 40px;
+    margin: 30px 0 0 30px; }
   .header__logo a {
     display: inline-block;
     padding: 15px;
@@ -81,8 +85,13 @@ html, body {
 @media only screen and (min-width: 381px) and (max-width: 670px) {
   .header {
     height: 70px; }
+    .header__github img {
+      margin-top: 15px; }
     .header__menu {
-      bottom: 30px; }
+      bottom: 30px;
+      margin-left: 20px; }
+    .header__logo {
+      margin-right: 70px; }
     .header__logo a {
       padding: 10px;
       font-size: 2rem;
