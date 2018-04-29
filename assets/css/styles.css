@@ -392,6 +392,8 @@ li {
       width: 100%;
       display: block;
       margin: 0 auto; }
+    .flexbox-container .project .blusaphir {
+      width: 52.5%; }
 
 .project-description h3, .project-description h4 {
   display: none; }
